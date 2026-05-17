@@ -1,0 +1,13 @@
+[
+  {"case_id": "checkout-001", "step": "login", "status": "pass", "duration_ms": 420},
+  {"case_id": "checkout-001", "step": "load_cart", "status": "pass", "duration_ms": 510},
+  {"case_id": "checkout-001", "step": "apply_discount", "status": "fail", "duration_ms": 980, "error": "discount total mismatch"},
+  {"case_id": "checkout-002", "step": "login", "status": "pass", "duration_ms": 390},
+  {"case_id": "checkout-002", "step": "load_cart", "status": "pass", "duration_ms": 540},
+  {"case_id": "checkout-002", "step": "payment_authorize", "status": "fail", "duration_ms": 2500, "error": "dependency timeout"},
+  {"case_id": "profile-001", "step": "login", "status": "pass", "duration_ms": 405},
+  {"case_id": "profile-001", "step": "update_preferences", "status": "pass", "duration_ms": 650},
+  {"case_id": "api-001", "step": "auth_token_exchange", "status": "pass", "duration_ms": 310},
+  {"case_id": "api-001", "step": "fetch_account_summary", "status": "fail", "duration_ms": 1800, "error": "response schema mismatch: missing field balance_available"},
+  {"case_id": "api-001", "step": "submit_transfer", "status": "pass", "duration_ms": 720}
+]
