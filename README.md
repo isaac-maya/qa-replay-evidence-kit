@@ -1,12 +1,23 @@
 # QA / SDET Evidence Kit
 
+🌐 **Live demo:** _coming soon — deploys to Hugging Face Spaces in Wave 3 rollout_
+
 This artifact replays synthetic workflow logs, classifies failures, and generates a defect packet plus release-risk summary. It is meant to feel like a compact quality-engineering work sample, not a toy testing framework.
 
 ## Run
 
+**Interactive (Streamlit) — recommended:**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Pick a log, watch events stream past with failure classifications appearing in real time, and read the Go/No-Go verdict + defect packet + risk summary.
+
+**CLI batch run:**
 ```bash
 python3 replay_harness.py
 ```
+Refreshes `defect_packet.md` and `risk_summary.md`.
 
 ## What It Demonstrates In 30 Seconds
 
